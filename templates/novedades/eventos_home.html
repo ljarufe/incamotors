@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div>
+        <div>
+            <ul>
+            {% for evento in novedades %}
+                <li>
+                    <h3>{{ evento.nombre }}</h3>
+                    <p>{{ evento.descripcion }}</p>
+                    <img src="{{ evento.foto.thumbnail }}" />
+                    <img src="{{ evento.foto_pie.thumbnail }}" />
+                </li>
+            {% endfor %}
+            <ul>
+        </div>
+    </div>
+{% endblock %}

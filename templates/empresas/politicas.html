@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link href="{{ MEDIA_URL }}css/empresas/politicas.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+<div id="contenido">
+    <h2>Políticas de calidad</h2>
+    <p>{{ empresa.politicas }}</p>
+    </div>
+{% endblock %}

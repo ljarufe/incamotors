@@ -1,0 +1,111 @@
+
+.lista {
+	width:920px;
+	height:30px;
+	position:absolute;
+	text-align:center;	
+	}
+	
+	
+	.lista li{
+		width: 100px;
+		height: 20px;
+		display:inline-block;
+		color:#FFF;
+		font-size:12px;
+		vertical-align:middle;
+		padding-top:10px;
+		}
+		
+		
+		
+	 .lista li:hover{
+		width: 100px;
+		height: 20px;
+		display:inline-block;
+		color:#FFF;
+		font-size:12px;
+		vertical-align:middle;
+		background:#999;
+		padding-top:10px;
+		}
+		.lista li:activo{
+		width: 100px;
+		height: 20px;
+		display:inline-block;
+		color:#FFF;
+		font-size:12px;
+		vertical-align:middle;
+		background:#999;
+		padding-top:10px;
+		}
+		.lista li a{
+
+			
+			color:#FFF;
+	
+		}
+		
+.detalle_marca{
+	overflow:auto;
+	height:255px;
+	padding-top:5px;	
+	}
+	
+	
+#cuerpo {
+height: 426px;
+background: url(../../img/fondos/marcas.jpg);
+		}	
+	#barra-lista{
+		height: 30px;
+		width:920px;
+		margin-top:85px;
+		position:absolute;
+		vertical-align:middle;
+		background-color:rgba(0,0,0,0.7);
+	}
+		
+		
+	#caja-marcas {
+		height: 260px;
+		width:920px;
+		position:absolute;
+		margin-top:140px;
+		background-color:rgba(0,0,0,0.7);
+			}
+			
+	
+			#marca {
+				height:200px;
+				width:200px;
+				float:left;
+				position: relative;
+				margin-left:100px;
+				margin-top:30px;				
+				}
+					
+			#descripcion {
+				
+				height:200px;
+				width:500px;
+				/*float: inherit;*/
+				position: relative;
+				text-align:justify;
+				/*margin-top:70px;*/
+				margin-bottom:auto;
+				margin-left:300px;
+				margin-right:200px;
+				padding-top:70px;
+				
+				
+					}
+	
+
+
+
+
+
+
+
+

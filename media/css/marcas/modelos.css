@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+		vertical-align:middle;
+		text-align: center;
+		
+	}
+	
+	
+.lista_modelos ul {
+	
+	width:720px;
+	height:300px;
+	overflow:auto;
+		}
+	
+	.lista_modelos ul li{
+		display:inline-block;
+		padding-top:6px;
+		width:100px;
+		height:10px;	
+		}
+		.lista_modelos ul li a{
+			padding-left:30px;
+			
+			width:100px;
+			height:10px;	
+		}
+
+.lista_fotos{
+						
+			width:720px;
+			height:300px;	
+		}
+		
+
+
+#cuerpo {
+height: 426px;
+background: url(../../img/fondos/fondo-showrrom.png)repeat-x;
+		}
+
+#menu-1{
+		width:200px;
+		height:320px;
+		float:left;
+		margin-top:90px;
+	
+		
+	}
+	#menu-1 img{	
+		background: #FFF;	
+	}
+	
+	#menu-1 li{
+		height:22px;
+		width:200px;
+		padding-top:3px;
+		background: #666;
+		text-align:center;
+		vertical-align:middle;
+		color:#FFF;
+		font-size:14px;
+	}
+	#menu-1 li:hover{
+		height:22px;
+		width:200px;
+		padding-top:3px;
+		background: #06C;
+		text-align:center;
+		color:#FFF;
+		font-size:14px;	
+	}
+
+#menu-nombres{
+		width:720px;
+		height:25px;
+		background: #E2E2E2;
+		float: right;
+		margin-top:90px;
+			
+	}
+
+#carros{
+	width:720px;
+	height:300px;
+	float: right;		
+	}
+	
+	
+	#galeria{
+		height:300px;
+		width:600px;
+		float:left;
+
+	}
+	
+	#display{
+				height:350px;
+				width:300px;
+				float:right;
+		
+			}
+	
+		#mini{
+				height:50px;
+				width:300px;
+		
+			}
+			#mini ul li{
+				display:inline-block;
+		
+			}
+		#botones{
+				height:25px;
+				width:150px;
+				/*background:#06C;
+				color:#FFF;
+				font-size:15px;
+				position:relative;*/
+			}
+		
+
+	
+

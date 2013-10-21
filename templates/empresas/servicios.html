@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link href="{{ MEDIA_URL }}css/empresas/servicios.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+{% block body %}
+<div id="contenido"
+    <ul>
+    {% for servicio in servicios %}
+        <li>{{ servicio.nombre }}</li>
+    {% endfor %}
+    </ul>
+    </div>
+{% endblock %}

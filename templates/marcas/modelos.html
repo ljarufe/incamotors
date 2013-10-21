@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link href="{{ MEDIA_URL }}css/marcas/modelos.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+<div id ="menu-1">
+    <div class="menu_izquierda">
+        <img src="{{ marca.logo.thumbnail }}" title="{{ marca.nombre }}" />
+        <ul>
+        {% for categoria in categorias %}
+            {% if categoria.id == id_categoria %}
+            <li class="selected">
+            {% else %}
+            </li>
+            <li>
+            {% endif %}
+            {{ categoria.nombre }}</li>
+        {% endfor %}
+        </ul>
+    </div>
+   </div>
+    
+    <div class="lista_modelos">
+    <div id="menu-nombres">
+        <ul class="lista_nombres">
+        {% for modelo in modelos %}
+            <li>
+                <a href="{% url modelos modelo.id  %}">{{ modelo.nombre }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    </div>
+     <div id="carros"> 
+         <div id="galeria">   
+                <div class="modelo">
+                            <div class="fotos_grandes">
+                                <ul>
+                                    <li>
+                                        <img src="{{ modelo.foto_lat.thumbnail }}" title="{{ modelo.nombre }} - lateral" />
+                                    </li>
+                                    <li>
+                                        <img src="{{ modelo.foto_int.thumbnail }}" title="{{ modelo.nombre }} - interior" />
+                                    </li>
+                                    <li>
+                                        <img src="{{ modelo.foto_back.thumbnail }}" title="{{ modelo.nombre }} - detrás" />
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+         </div>
+          
+        <div id="display">
+            <div id="mini">
+                <div class="fotos_mini">
+                    <ul>
+                        <li>
+                            <img src="{{ modelo.foto_lat.extra_thumbnails.small }}" title="{{ modelo.nombre }} - 		lateral" />
+                            lateral
+                        </li>
+                        <li>
+                            <img src="{{ modelo.foto_int.extra_thumbnails.small }}" title="{{ modelo.nombre }} - interior" />
+                            interior
+                        </li>
+                        <li>
+                            <img src="{{ modelo.foto_back.extra_thumbnails.small }}" title="{{ modelo.nombre }} - atrás" />
+                            Atrás
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+                <div id="botones">
+                    <a href="{% url categorias marca.id categoria %}">volver</a>
+                    <a href="{% url modelos next %}">siguiente</a>
+       			 </div>
+                <div id="ficha">
+                <h2>{{ modelo.nombre }}</h2>
+                <a href="{{ MEDIA_URL }}{{ modelo.ficha }}">
+                    <img src="" title="Ver ficha" alt="Ver ficha" />
+                    Ver ficha
+                </a>
+                </div>
+  
+   </div>
+
+{% endblock %}
+

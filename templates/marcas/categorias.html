@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link href="{{ MEDIA_URL }}css/marcas/categorias.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+    <div id ="menu-1">
+        <div class="menu_izquierda">
+            <img src="{{ marca.logo.thumbnail }}" title="{{ marca.nombre }}" />
+            <ul>
+            {% for categoria in categorias %}
+                <a href="{% url categorias marca.id categoria.id %}">
+                    {% if categoria.id == id_categoria %}
+                    <li class="selected">
+                    {% else %} 
+                    </li>
+                    <li>
+                    {% endif %}
+                    {{ categoria.nombre }}
+                    </li>
+                </a>
+            {% endfor %}
+            </ul>
+        </div>
+      
+    </div>
+    
+    <div class="lista_modelos"> 
+    	<div id="menu-nombres">
+            <ul class="lista_nombres">
+            {% for modelo in modelos %}
+                <li>
+                    <a href="{% url modelos modelo.id  %}">{{ modelo.nombre }}</a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+        
+        <div id="carros">
+            <ul class="lista_fotos">
+            {% for modelo in modelos %}
+                <a href="{% url modelos modelo.id %}">
+                    <li>
+                        <img src="{{ modelo.foto_lat.extra_thumbnails.small }}" title="{{ modelo.nombre }}" />
+                        {{ modelo.nombre }}
+                    </li>
+                </a>
+            {% endfor %}
+            </ul>
+         </div>
+     </div>
+{% endblock %}

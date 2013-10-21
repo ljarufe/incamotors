@@ -1,0 +1,76 @@
+
+.novedades{
+	overflow:auto;
+	height:250px;
+	
+}
+#cuerpo {
+	height: 426px;
+	background: url(../../img/fondos/promociones.jpg);
+}
+	
+#contenido{
+	height: 286px;
+	width:440px;
+	float:right;
+	margin-top:80px;
+	padding:50px 10px 10px 40px;
+	
+	background-color:rgba(0,0,0,0.5);
+}
+
+#titulo{
+		color: #FFF;
+		font-size:25px;
+	}
+	
+		#titulo h3{
+				color: #FFF;
+				font-size:25px;
+			}
+#descrip{
+		width:400px;
+		color: #FFF;
+		font-size:13px;
+		text-align:justify;
+		margin-top:10px;
+	}
+#imag{
+	
+		color: #FFF;
+		font-size:25px;
+		margin-top:20px;
+	}
+	
+		#imag img{
+			height:100px;
+			width:100px;
+		}
+/*#contenido h2{
+		color: #FFF;
+		font-size:25px;
+	}
+	
+
+#contenido img{
+	width:50px;
+	height:50px; 
+		
+	}
+	#lista {
+		height: 426px;
+		padding-top:40px;
+		overflow:auto;
+	}
+
+	#contenido li{
+		color: #FFF;
+		font-size:20px;	
+	}
+	#contenido li:hover{
+		color:#FC0;
+		font-size:20px;
+		cursor:pointer;
+	}
+	
+		*/

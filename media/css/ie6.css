@@ -1,0 +1,12 @@
+/* Estilos para IE6 */
+
+	#cabecera #menu2 #ul1 {
+		overflow: hidden;
+		height: 45px;
+	}
+	
+		#cabecera #menu2 #sub-menu2 ul {
+			position: absolute;
+			top: 46px;
+			margin-left: -94px;
+		}

@@ -1,0 +1,32 @@
+#cuerpo {
+	height: 426px;
+	background: url(../../img/fondos/enlaces.jpg);
+}
+
+
+#contenido{
+	height: 316px;
+	width:440px;
+	float:right;
+	margin-top:80px;
+	padding:20px 10px 10px 40px;
+	
+	background-color:rgba(0,0,0,0.5);
+}
+
+	#contenido h2{
+		color: #FFF;
+		font-size:30px;
+	}
+	#contenido a{
+		color: #FC0;
+		font-size:15px;
+	}
+	
+.enlaces{
+			height: 300px;
+			width:450;
+			padding-top:40px;
+			overflow:auto;
+		
+		}

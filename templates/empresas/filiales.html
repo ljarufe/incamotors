@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block head %}
+	<link href="{{ MEDIA_URL }}css/empresas/filiales.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+{% block body %}
+<div id="contenido">
+ <div id="lista">
+    <ul>
+    {% for filial in filiales %}
+        <li>{{ filial.nombre }}</li>
+    {% endfor %}
+    </ul>
+    </div>
+    </div>
+{% endblock %}

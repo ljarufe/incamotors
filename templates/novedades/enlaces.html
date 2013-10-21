@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link href="{{ MEDIA_URL }}css/common/enlaces.css" type="text/css" rel="stylesheet" />
+        
+{% endblock %}
+
+{% block body %}
+<div id="contenido">
+      <h2>Enlaces</h2>
+    <div class="enlaces">
+       
+        <ul>
+        {% for enlace in novedades %}
+            <li>
+                <h3><a href="{{ enlace.url }}">{{ enlace.url }}</a></h3>
+                <p>{{ enlace.descripcion }}</p>
+            </li>
+        {% endfor %}
+        <ul>
+    </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,37 @@
+
+
+
+#cuerpo {
+	height: 426px;
+	background: url(../../img/fondos/servicios.jpg)
+}
+
+#contenido{
+	height: 266px;
+	width:440px;
+	float:right;
+	margin-top:80px;
+	padding:70px 10px 10px 40px;
+	
+	background-color:rgba(0,0,0,0.5);
+}
+
+	#lista {
+		height: 426px;
+		padding-top:40px;
+		overflow:auto;
+	}
+
+	#contenido li{
+		color: #FFF;
+		font-size:20px;
+		
+		
+	}
+	#contenido li:hover{
+		color:#FC0;
+		font-size:20px;
+		cursor:pointer;
+	}
+	
+		

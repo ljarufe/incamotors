@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link href="{{ MEDIA_URL }}css/common/contacto.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+	
+    <script>
+		$(document).ready(function(){
+			$(".errorlist").hide().next().css("color","#F33");
+			if($(".errorlist").length)
+				alert("Los campos marcados con rojo son obligatorios.");
+		});
+	</script>
+    <div id= "formulario">
+    
+    <div id= "maqta">
+    
+    <form method='post' action=''>
+        <ul>
+            {{ form.as_ul }}
+           	<div class="clear"></div>
+            <li class="right">
+                <input type="submit" id="send" value="Enviar" />
+            </li>
+            <li class="right">
+                <button>Borrar</button>
+            </li>
+        </ul>        
+    </form>
+	</div>
+    </div>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block head %}
+	<link href="{{ MEDIA_URL }}css/marcas/marcas.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+<div id="barra-lista">
+    <div class="lista">
+        <ul>
+        {% for marca in marcas %}
+            <li><a href="#{{ marca.nombre }}">{{ marca.nombre|upper }}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+    </div>
+    <div id="caja-marcas">
+    <div class="detalle_marca">
+        <ul>
+        {% for marca in marcas %}
+            <li>
+            	<a name="{{ marca.nombre }}"></a>
+                <div id="marca">
+                    <img src="{{ marca.logo.thumbnail }}" title="{{ marca.nombre }}" />
+                </div>
+                    
+                <div id="descripcion">
+                
+                        <p>{{ marca.descripcion }}</p>
+                </div>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    </div>
+{% endblock %}

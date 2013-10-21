@@ -1,0 +1,132 @@
+/* Reseteador Css - v1.0 | 20080212 */
+
+
+
+/* Estilos Generales */
+
+
+/*label {
+display: block;
+margin: .5em 0 0 0;
+}*/
+
+/* Estilos especificos */
+
+
+#cuerpo {
+	height: 426px;
+	background: url(../../img/fondos/contactos.jpg) 
+}
+
+
+		#formulario {
+		
+			width: 650px;
+			height: 346px;
+			position: absolute;
+			/*padding:auto auto;*/
+			margin-top:80px;
+			margin-right:135px;
+			margin-left:135px;
+			background-color:rgba(0,0,0,0.5);
+		}
+		
+			#formulario #maqta {
+				width: 550px;
+				height:300;
+				margin-top:50px;
+				margin-bottom:23px;
+				margin-left:50px;
+				margin-right:50px;
+				/*margin:23px 50px 23px 50px;*/
+			}
+		
+		#formulario label {
+			width: 80px;
+			display: block;
+			float:left;
+			color:#FFF;
+			padding:2px;
+			margin:2px 2px 2px 5px;
+		}
+		
+		/*#formulario input,
+		#formulario select {
+			width: 150px;
+			float: right;
+			padding: 1px;
+			margin: 2px 2px 5px 2px;
+			height: 13px;
+			font-size: 11px;
+		}*/
+		
+		#formulario textarea{
+			width: 406px;
+			margin-bottom: 10px;
+		}
+		
+		#formulario select {
+			width: 156px;
+			padding: 0px;
+			font-size:10px;
+			height: 18px;
+		}
+		
+		
+			#formulario li{
+				display: inline-block;			
+			}
+
+			
+			#formulario button,
+			#formulario #send{
+				font-size:10px;				
+				font-weight:bold;
+				color: #000;
+				background: #F93;
+				border:0px;
+				width: 50px !important;
+				height: 19px;
+				margin: 0px !important;
+			}
+			
+			#formulario .right {
+				float: right;
+				margin-left: 10px;
+				position: relative;
+				right: 47px;
+			}
+			
+			#formulario .errorlist{
+				position: absolute;
+				font-size:10px;	
+				color: #F00;
+				
+			}
+			
+			#option{
+				color: #0FF;		
+			}
+			
+		
+
+
+
+
+
+
+	/*#formulario ul li {
+
+		position: relative;
+		display: inline;
+	}
+
+
+	#formulario ul li {
+
+		position: relative;
+		display: inline;
+
+	}*/
+
+

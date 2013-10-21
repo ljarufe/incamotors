@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link href="{{ MEDIA_URL }}css/novedades/novedades.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+<div id="contenido">
+
+    <div class="novedades">
+        <ul>
+        {% for novedad in novedades %}
+            <li>
+            
+                <div id="titulo">
+                	
+                    <h3>{{ novedad.nombre }}</h3>
+                    
+                 </div>
+                
+				<div id="descrip">
+                	
+                    <p>{{ novedad.descripcion }}</p>
+                    
+                 </div>
+                
+                <div id="imag">
+                	
+                    <img src="{{ novedad.foto.thumbnail }}" title="{{ novedad.nombre }}" />
+                    
+                 </div>
+                
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    
+    
+ </div>
+{% endblock %}

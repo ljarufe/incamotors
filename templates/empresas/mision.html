@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block head %}
+	<link href="{{ MEDIA_URL }}css/empresas/mision.css" type="text/css" rel="stylesheet" />
+{% endblock %}
+{% block body %}
+<div id="contenido">
+    <h2>Misión</h2>
+    <p>{{ empresa.mision }}</p>
+    
+    <h2>Visión</h2>
+    <p>{{ empresa.vision }}</p>
+        </div>
+{% endblock %}

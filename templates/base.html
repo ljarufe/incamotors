@@ -1,0 +1,110 @@
+{% load querytags %}
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>Incamotors | {{ titulo }}</title>
+		
+		<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/style.css" media="screen" />
+        
+        <!-- Carga de estilo para el Internet Explorer 6 -->
+		<!--[if IE 6]>
+        <link rel="stylesheet" type="text/css" href="/media/css/ie6.css" media="screen" />
+        <![endif]-->
+        <meta name="keywords" content="" />
+        
+		<script type="text/javascript" src="{{ MEDIA_URL }}js/common/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="{{ MEDIA_URL }}js/common/base.js"></script>
+				
+		{% block head %}
+		{% endblock %}
+
+	</head>
+	<body>
+	    <div id="container">
+	        <div id="cabecera">
+            	<div id="logo"><img src="{{ MEDIA_URL }}img/elementos/logo-inkamotors.png"/></div>
+	            <div id="menu1">
+	                <ul>
+	                    <li id="noticias">
+	                        <a href="{% url noticias %}">Noticias</a>
+                        </li>
+                        <li id="eventos">
+	                        <a href="{% url eventos %}">Eventos</a>
+                        </li>
+                        <li id="promociones">
+	                        <a href="{% url promociones %}">Promociones</a>
+                        </li>
+                        <li id="enlaces">
+	                        <a class="last" href="{% url enlaces %}">Enlaces</a>
+                        </li>
+	                </ul>
+	            </div>
+	            <div id="menu2">
+	                <ul id="ul1">
+        	            <li>
+	                        <a href="{% url eventos_home %}">Home</a>
+                        </li>
+                        <li id="sub-menu2">
+	                        <a href="">Incamotors</a>
+	                        <ul>
+                                <li>
+	                                <a href="{% url nosotros %}">Nosotros</a>
+                                </li>
+                                <li>
+	                                <a href="{% url mision %}">Misión y visión</a>
+                                </li>
+                                <li>
+	                                <a href="{% url politicas %}">Políticas de calidad</a>
+                                </li>	                            
+	                        </ul>
+                        </li>
+                        <li>
+	                        <a href="{% url marcas %}">Marcas</a>
+                        </li>
+                        <li>
+                            {% get_showroom_home %}
+                        </li>
+                        <li>
+	                        <a href="{% url servicios %}">Servicios</a>
+                        </li>
+                        <li>
+	                        <a href="{% url filiales %}">Filiales</a>
+                        </li>
+                        <li>
+	                        <a href="{% url contacto %}">Contacto</a>
+                        </li>
+                        <div class="clear"></div>
+	                </ul>
+	            </div>
+                <div id="banner-logo"><div id="logotipo"><img src="{{ MEDIA_URL }}img/elementos/logotipo-inkmotors.png"/></div></div>
+                                	                   
+                <div class="clear"></div>
+                
+            </div>
+            
+            <div id="cuerpo">
+	            {% block body %}
+                {% endblock %}
+            </div>
+            
+            <div id="pie-marcas">
+                {% get_marcas %}
+            </div>
+        </div>
+        <div id="pie">
+
+        	<div id="copy" ><p>INKA MOTORS 2011<br /> Copyright © 2010 powerd by </p></div>
+            <div id="repro" ><p>REPRODUCTOR</p></div>
+
+            <div id="redes" >
+            	<div id="logo-youtube"><img src="/media/img/elementos/logo-youtube.png"/></div>
+                <div id="logo-face"><img src="/media/img/elementos/logo-facebook.png"/></div>
+                <p>Siguenos en:</p>
+                </div>
+        
+        </div>
+	</body>
+</html>

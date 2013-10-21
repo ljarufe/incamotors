@@ -1,0 +1,9 @@
+<ul>
+{% for marca in marcas %}
+    <a href="{% url categorias marca.id 1 %}">
+        <li>
+            <img src="{{ marca.logo.extra_thumbnails.small }}" title="{{ marca.nombre }}" />
+        </li>
+    </a>
+{% endfor %}
+</ul>
